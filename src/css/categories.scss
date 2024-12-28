@@ -1,0 +1,37 @@
+.categories {
+    display: block;
+    background-color: #EFEEF6;
+    width: 30%;
+    height: 710px;
+    margin-top: 47px;
+    position: absolute;
+    left: 0;
+}
+
+.categories_list {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 23px;
+    list-style-type: none;
+    padding: 40px 0 60px 100px;
+}
+
+.categories_link {
+    font-size: 14px;
+    color: $base-grey;
+    cursor: pointer;
+
+    &.active {
+        font-size: 18px;
+        font-weight: 700;
+        list-style-type: disc;
+        color: $text-color;
+
+        &::marker {
+            color: #756AD3;
+            font-size: 18px;
+        }
+    }
+}

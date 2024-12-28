@@ -1,0 +1,91 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='./src/output/main.css')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Open+Sans&display=swap' rel='stylesheet')
+  title Bookshop
+header.header
+  .container
+    .header_inner
+      h1.header_logo Bookshop
+      nav.header_nav
+        a.nav_link.active(href='#') Books
+        a.nav_link(href='#') Audiobooks
+        a.nav_link(href='#') Stationery &amp; gifts
+        a.nav_link(href='#') Blog
+      .header_icons
+        a.icons_item(href='#')
+          img(src='../../assets/user.svg')
+        a.icons_item(href='#')
+          img(src='../../assets/search.svg')
+        a.icons_item(href='#')
+          img(src='../../assets/shop bag.svg')
+          span.cart_counter
+      .burger
+        input#burger__checkbox.burger__checkbox(type='checkbox')
+        label.burger__label(for='burger__checkbox')
+        ul.burger__list
+          li
+            a.burger__link(href='') Books
+          li
+            a.burger__link(href='') Audiobooks
+          li
+            a.burger__link(href='') Stationery &amp; gifts
+          li
+            a.burger__link(href='') Blog
+.container
+  .slider
+    img.slider_img.active(src='../../assets/banner_first.png' alt='')
+    .promo_block-first
+      h2.promo_text Change old book on new
+      img.promo_arrow(src='../../assets/arrow.svg' alt='arrow')
+    .promo_block-second
+      h2.promo_text top 100 books 2022
+      img.promo_arrow(src='../../assets/arrow.svg' alt='arrow')
+    .dots
+      .dot.active(data-id='1')
+      .dot(data-id='2')
+      .dot(data-id='3')
+main.main
+  .container
+    .categories
+      ul.categories_list
+        li.categories_link.active(data-category='Architecture')
+          a(href='#') Architecture
+        li.categories_link(data-category='Art')
+          a(href='#') Art &amp; Fashion
+        li.categories_link(data-category='Biography & Autobiography')
+          a(href='#') Biography
+        li.categories_link(data-category='Business')
+          a(href='#') Business
+        li.categories_link(data-category='Crafts & Hobbies')
+          a(href='#') Crafts &amp; Hobbies
+        li.categories_link(data-category='Drama')
+          a(href='#') Drama
+        li.categories_link(data-category='Fiction')
+          a(href='#') Fiction
+        li.categories_link(data-category='Cooking')
+          a(href='#') Food &amp; Drink
+        li.categories_link(data-category='Health & Fitness')
+          a(href='#') Health &amp; Wellbeing
+        li.categories_link(data-category='History')
+          a(href='#') History &amp; Politics
+        li.categories_link(data-category='Humor')
+          a(href='#') Humor
+        li.categories_link(data-category='Poetry')
+          a(href='#') Poetry
+        li.categories_link(data-category='Psychology')
+          a(href='#') Psychology
+        li.categories_link(data-category='Science')
+          a(href='#') Science
+        li.categories_link(data-category='Technology')
+          a(href='#') Technology
+        li.categories_link(data-category='Travel')
+          a(href='#') Travel &amp; Maps
+  .cards_block
+  button.load_btn load more
+script(type='module' src='./main.js')

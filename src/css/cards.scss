@@ -1,0 +1,92 @@
+$text-color: #1C2A39;
+$base-grey: #5C6A79;
+
+.cards_block {
+    max-width: 68vw;
+    margin-left: 27vw;
+    padding-top: 110px;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.cards_item {
+    display: flex;
+    z-index: 2;
+    max-width: 400px;
+    gap: 36px;
+}
+
+.card_img {
+    width: 212px;
+    height: 300px;
+}
+
+.card_info {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    color: $base-grey;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: space-between;
+}
+
+.info_title {
+    font-size: 18px;
+    color: $text-color;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.info_text {
+    max-height: 50px;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin main_btn {
+    text-transform: uppercase;
+    color: #4C3DB2;
+    border: 2px solid #4C3DB2;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 12px;
+    width: 176px;
+    height: 45px;
+}
+
+.info_btn {
+    @include main_btn;
+    margin-top: 16px;
+}
+
+.added {
+    opacity: 0.6;
+    border: 2px solid $base-grey;
+    color: $base-grey;
+}
+
+.raiting_star {
+    width: 16px;
+    height: 16px;
+}
+
+.info_raiting {
+    font-size: 12px;
+    display: flex;
+    gap: 5px;
+}
+
+.info_cost {
+    color: $text-color;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.load_btn {
+    @include main_btn;
+    display: block;
+    margin: 90px auto;
+}
